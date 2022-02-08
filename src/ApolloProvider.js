@@ -10,7 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 import { onError } from '@apollo/client/link/error'
 
 const httpLink = createHttpLink({
-    uri: 'http://192.168.107.164:5000/graphql'
+    uri: 'https://mern-socialmedia-app-server.herokuapp.com/graphql'
 });
 
 const authLink = setContext((_, { headers }) => {
